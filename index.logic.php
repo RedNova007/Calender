@@ -2,7 +2,7 @@
 	
 	$db = new mysqli('localhost','root','','calender');
 
-	$query = "SELECT birthdays.person, birthdays.day, birthdays.month_id, birthdays.year, month.id, month.month 
+	$query = "SELECT birthdays.person, birthdays.day, birthdays.month_id, birthdays.year, month.id, month.month, birthdays.id AS id
 	FROM birthdays
 	LEFT JOIN month 
 	ON birthdays.month_id=month.id

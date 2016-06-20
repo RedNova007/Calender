@@ -23,9 +23,16 @@
         if ($currDay != $calender_['day']) {
             $currDay = $calender_['day'];
             echo"<h2>" . $calender_['day'] . "</h2>";
-            echo $calender_['person'];
 } 
 ?>
+        <p>
+            <tr>
+                <td><?=$calender_['person']?></td>
+                <td>(<?=$calender_['year']?>)</td>
+                <a href="delete.php?id=<?=$calender_['id']?>">x</a>
+            </tr>
+        </p>
+    
 
 <?php
     endforeach;
