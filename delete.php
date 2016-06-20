@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="common/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+</body>
+</html>
+
+
 <?php
 	require_once "delete.logic.php";
 ?>

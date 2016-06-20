@@ -10,8 +10,6 @@
 </head>
 	
 <body>
-
-
 <?php
     foreach ($calender as $calender_) :
 
@@ -27,18 +25,16 @@
 ?>
         <p>
             <tr>
+                <a href="edit.php?id=<?=$calender_['id']?>">
                 <td><?=$calender_['person']?></td>
                 <td>(<?=$calender_['year']?>)</td>
+                </a>
                 <a href="delete.php?id=<?=$calender_['id']?>">x</a>
             </tr>
         </p>
-    
-
 <?php
     endforeach;
 ?>
-
     <p><a href="create.php">+ Toevoegen</a></p>
-
 </body>
 </html>

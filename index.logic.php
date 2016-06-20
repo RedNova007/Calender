@@ -12,9 +12,6 @@
 	
 	$calender = $result->fetch_all(MYSQLI_ASSOC);
 
-	
 	$currDay = null;
 	$currMonth_id = null;
-		
-	
 ?>	

@@ -11,12 +11,14 @@
 
 
 <?php
-	require_once "create.logic.php";
+	require_once "edit.logic.php";
 ?>
-<h1>New Birthday</h1>
-<form method="post">
+
+	<h1>Edit Birthday</h1>
+	<form method="post">
 
 	<div>
+		<input type="hidden" name="id" value="<?=$calender_['id']?>">
 		<label for="name">Person:</label>
 		<input type="text" id="person" name="Person">
 	</div>
